@@ -3,12 +3,20 @@ pipeline {
     stages {
         stage('Example Build') {   
             steps {
-                echo 'Hello, Maven'             
+                echo 'Build Sucessfully'             
             }
         }
         stage('Example Test') {
             steps {
-                echo 'Hello, JDK'          
+                echo 'Test Sucessfully'          
+            }
+         stage('Example Deployed') {
+            steps {
+                echo 'Deployed Sucessfully'          
+            }
+            stage('Example Release') {
+            steps {
+                echo 'Release Sucessfully'          
             }
         }
     }
