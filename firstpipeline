@@ -10,9 +10,11 @@ pipeline {
             steps {
                 echo 'Test Sucessfully'          
             }
-         stage('Example Deployed') {
+            }            
+        stage('Example Deployed') {
             steps {
                 echo 'Deployed Sucessfully'          
+            }
             }
             stage('Example Release') {
             steps {
